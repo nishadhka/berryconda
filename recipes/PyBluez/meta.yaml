@@ -1,0 +1,25 @@
+package:
+  name: pybluez
+  version: "0.22"
+
+source:
+  fn: PyBluez-0.22.zip
+  url: https://pypi.python.org/packages/c1/98/3149481d508bee174335be6725880f00d297afebe75c15e917af8f6fe169/PyBluez-0.22.zip
+  md5: 49dab9d5a8f0b798c8125c7f649be3cd
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+meta.yaml    - python
+
+test:
+  imports:
+    - bluetooth
+
+about:
+  home: https://github.com/karulis/pybluez
+  license: GPL-2.0
+  summary: Bluetooth Python extension module to allow Python developers to use system Bluetooth resources. PyBluez works with GNU/Linux and Windows XP.
