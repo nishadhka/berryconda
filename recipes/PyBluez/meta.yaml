@@ -13,7 +13,7 @@ requirements:
     - setuptools
 
   run:
-meta.yaml    - python
+    - python
 
 test:
   imports:

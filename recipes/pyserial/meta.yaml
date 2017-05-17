@@ -1,0 +1,26 @@
+package:
+  name: pyserial
+  version: "3.3"
+
+source:
+  fn: pyserial-3.3.tar.gz
+  url: https://pypi.python.org/packages/8d/88/cf848688ae011085a6da5a470740dafa3a4b105f84a5f79c3b720c19279c/pyserial-3.3.tar.gz
+  md5: 6afe4c2e47bcec6eb7051b8c1ce19d52
+  
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run: 
+    - python
+
+test:
+  imports:
+    - serial
+
+about:
+  home: https://github.com/pyserial/pyserial
+  license:  BSD
+  summary: Python Serial Port Extension for Win32, OSX, Linux, BSD, Jython, IronPython
